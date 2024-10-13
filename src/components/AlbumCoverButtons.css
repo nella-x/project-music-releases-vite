@@ -1,0 +1,26 @@
+button {
+  width: 40px;
+  /* Adjust the width as needed */
+  height: 40px;
+  /* Adjust the height as needed */
+  background-color: transparent;
+  /* Transparent background   
+ to show the SVG */
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  /* For absolute positioning of the SVG */
+}
+
+button img {
+  position: absolute;
+  /* Position the SVG within the button */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Make the SVG fill the entire button */
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the SVG scales to fit the button */
+}

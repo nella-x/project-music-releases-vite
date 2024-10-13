@@ -1,7 +1,14 @@
-import data from "./data.json";
-
-console.log(data);
+import data from "./data.json"
+import { AlbumCard } from "./components/AlbumCard"
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
-};
+  return (
+    <>
+      <main className="album-card">
+        {data.albums.items.map((albumcard) => (
+          < AlbumCard key={albumcard.id} albumcard={albumcard} />
+        ))}
+      </main>
+    </>
+  )
+}
