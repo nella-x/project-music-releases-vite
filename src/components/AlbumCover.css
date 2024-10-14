@@ -1,0 +1,12 @@
+.album-cover img {
+  /* Your image styles here */
+  width: 200px;
+  /* Set a desired width */
+  height: 200px;
+  /* Set a desired height */
+  object-fit: cover;
+  /* Ensure image fills the container while maintaining aspect ratio */
+  border-radius: 5px;
+  /* Add rounded corners */
+  /* Add other desired styles like margin, padding, border, etc. */
+}

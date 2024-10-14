@@ -3,6 +3,8 @@ import { AlbumCover } from "./AlbumCover"
 import { AlbumName } from "./AlbumName"
 import { ArtistName } from "./ArtistName"
 
+import "./AlbumCard.css"
+
 export const AlbumCard = (props) => {
   return (
     <article className="album-card">

@@ -1,5 +1,5 @@
-import { AlbumCoverButtons } from './AlbumCoverButtons'
-
+import { AlbumCoverButtons } from "./AlbumCoverButtons"
+import "./AlbumCover.css"
 
 export const AlbumCover = (props) => {
   return (
