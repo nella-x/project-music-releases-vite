@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { AlbumCoverButtons } from "./AlbumCoverButtons";
-import "./AlbumCover.css";
+import "../index.css"
+
 
 export const AlbumCover = (props) => {
   return (

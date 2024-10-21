@@ -2,7 +2,7 @@ import Heart from "../assets/icons/heart.svg"
 import Play from "../assets/icons/play.svg"
 import Dots from "../assets/icons/dots.svg"
 
-import "./AlbumCoverButtons.css"
+import "../index.css"
 
 export const AlbumCoverButtons = () => {
   return (

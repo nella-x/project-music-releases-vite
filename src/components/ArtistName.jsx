@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import "./ArtistName.css";
+
+import "../index.css"
 
 export const ArtistName = (props) => {
   return (

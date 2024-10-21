@@ -1,4 +1,6 @@
 import data from "./data.json"
+import "./index.css"
+
 import { AlbumCard } from "./components/AlbumCard"
 
 export const App = () => {

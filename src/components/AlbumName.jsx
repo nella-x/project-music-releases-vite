@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import "./AlbumName.css";
+
+import "../index.css"
 
 export const AlbumName = (props) => {
   return (
