@@ -32,6 +32,16 @@ body {
   text-decoration: none;
 }
 
+.album-name a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
 span {
   color: #a0a0a0;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +61,7 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #0e0e0e;
+  background-color: #0e0e0e81;
   padding: 20px;
   width: 85%;
   max-width: 300px;
@@ -63,16 +73,19 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .album-cover img {
   width: 100%;
-  max-width: 350px;
-  transition: filter 0.3s ease;
+  height: auto;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.album-cover-box:hover .album-cover img {
-  filter: blur(2px);
+.album-cover-box:hover figure {
+  filter: blur(4px) brightness(50%);
+  transform: scale(1.05);
 }
 
 .album-cover-buttons {
@@ -80,25 +93,27 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  z-index: 1;
+  display: flex;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .album-cover-box:hover .album-cover-buttons {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.album-cover-buttons button {
+button {
   border: none;
-  width: 35px;
-  height: 35px;
   display: flex;
-  cursor: pointer;
-  transition: transform 0.2s ease;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  cursor: pointer;
   background: none;
+  transition: transform 0.2s ease;
+  margin: 0 8px;
 }
 
 .album-cover-buttons button:hover {
@@ -106,9 +121,10 @@ span {
 }
 
 .album-cover-buttons img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
+
 
 
 @media (min-width: 768px) {

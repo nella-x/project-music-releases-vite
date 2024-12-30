@@ -16,7 +16,6 @@ export const AlbumCard = (props) => {
   );
 };
 
-// PropTypes validation
 AlbumCard.propTypes = {
   albumcard: PropTypes.shape({
     name: PropTypes.string.isRequired,

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { AlbumCoverButtons } from "./AlbumCoverButtons";
-import "../index.css"
-
+import "../index.css";
 
 export const AlbumCover = (props) => {
   return (
@@ -9,15 +8,11 @@ export const AlbumCover = (props) => {
       <figure className="album-cover">
         <img src={props.albumcard.images[0].url} alt={props.albumcard.name} />
       </figure>
-
-      <div className="album-cover-buttons">
-        <AlbumCoverButtons />
-      </div>
+      <AlbumCoverButtons />
     </div>
   );
 };
 
-// PropTypes validation
 AlbumCover.propTypes = {
   albumcard: PropTypes.shape({
     name: PropTypes.string.isRequired,
